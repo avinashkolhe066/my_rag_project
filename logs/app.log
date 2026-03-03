@@ -1,0 +1,337 @@
+2026-03-03 15:35:12 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:35:12 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\pybackend\products.db
+2026-03-03 15:35:12 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:35:36 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:35:36 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\pybackend\products.db
+2026-03-03 15:35:36 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:58 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:58 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:58 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:58 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:58 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:58 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:48:58 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:48:58 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:48:58 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:49:04 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:49:04 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:49:04 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:34 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:34 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:34 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:34 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:34 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:34 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:34 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:34 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:34 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:41 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:41 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+rag_project\products.db
+2026-03-03 15:51:41 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:41 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:41 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:41 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:41 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:41 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:47 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:47 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:47 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:47 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:47 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:47 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:47 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:47 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:47 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:56 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:56 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:56 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:51:56 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:56 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:56 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:51:56 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:56 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:51:56 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:03 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:03 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:03 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:03 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:03 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:03 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:03 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:03 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:03 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:21 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:21 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:21 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:21 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:21 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:21 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:21 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:21 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:21 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:28 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:28 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:28 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:28 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:28 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:28 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:28 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:28 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:28 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:57 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:57 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:57 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:52:57 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:57 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:57 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:52:57 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:57 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:52:57 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:04 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:04 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:04 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:04 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:04 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:04 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:04 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:04 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:04 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:11 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:11 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:11 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:11 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:11 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:11 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:16 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:16 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:16 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:30 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:30 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:30 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:30 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:30 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:30 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:30 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:30 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:30 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:30 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:30 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:37 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:37 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:37 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:37 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:37 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:37 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:37 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:37 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:37 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:37 | INFO     | main | Hybrid RAG API v3 started
+ces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:37 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:45 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:45 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:45 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:45 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:45 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:45 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:45 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:45 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:45 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:45 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:45 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:45 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:45 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:45 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:45 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:45 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:52 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:52 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:52 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:52 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:52 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:52 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:53:53 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:53:53 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:53:53 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:53:53 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:00 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:00 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:00 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:00 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:00 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:00 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:00 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:00 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:00 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:00 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:00 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:00 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:01 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:01 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:01 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:01 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:09 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:09 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:09 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:09 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:09 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:09 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:10 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:10 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:10 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:10 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:18 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:18 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:18 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:18 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:18 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:18 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:18 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:18 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:18 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:18 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:18 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:18 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:19 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:19 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:19 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:19 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:29 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:29 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:29 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:29 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:31 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:31 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:31 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:31 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:38 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:38 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:38 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:38 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:40 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:40 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:40 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:40 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:46 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:46 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:46 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:46 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:48 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:48 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:48 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:48 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:53 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:53 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:53 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:53 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:54:55 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:54:55 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:54:55 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:54:55 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:06 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:06 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:06 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:06 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:13 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:13 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:13 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:13 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:28 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:28 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:28 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:28 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:35 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:35 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:35 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:35 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:39 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:39 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:39 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:39 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:42 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:42 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:42 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:42 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:46 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:46 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:46 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:46 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:49 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:49 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:49 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:49 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:53 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:53 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:53 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:53 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:55:55 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:55:55 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:55:55 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:55:55 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:56:22 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:56:22 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:56:22 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:56:22 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:56:29 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:56:29 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:56:29 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:56:29 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:58:45 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:58:45 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:58:45 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:58:45 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:59:17 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:59:17 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:59:17 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:59:17 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 15:59:24 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 15:59:24 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 15:59:24 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 15:59:24 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 16:00:16 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 16:00:16 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 16:00:16 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 16:00:16 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 16:00:24 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 16:00:24 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 16:00:24 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 16:00:24 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 16:00:54 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 16:00:54 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 16:00:54 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 16:00:54 | INFO     | main | Hybrid RAG API v3 started
+2026-03-03 16:01:02 | INFO     | llm_client | LLMClient initialized | backend=ollama | model=qwen2.5:7b
+2026-03-03 16:01:02 | INFO     | database | DatabaseManager initialized | db=C:\Users\Avinash\Desktop\my_rag_project\products.db
+2026-03-03 16:01:02 | ERROR    | workspace | Failed to load workspaces: Expecting value: line 1 column 1 (char 0)
+2026-03-03 16:01:02 | INFO     | main | Hybrid RAG API v3 started
