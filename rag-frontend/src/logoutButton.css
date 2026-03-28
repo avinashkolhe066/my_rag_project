@@ -1,0 +1,58 @@
+/* Logout Button Animation (Inspired by Uiverse.io by vinodjangid07) */
+.logout-anim-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+.logout-anim-btn .logout-sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout-anim-btn .logout-sign svg {
+  width: 17px;
+}
+.logout-anim-btn .logout-sign svg path {
+  fill: white;
+}
+.logout-anim-btn .logout-text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+.logout-anim-btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+.logout-anim-btn:hover .logout-sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+.logout-anim-btn:hover .logout-text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+.logout-anim-btn:active {
+  transform: translate(2px ,2px);
+}

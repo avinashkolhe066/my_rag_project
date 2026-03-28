@@ -1,5 +1,6 @@
 import uuid
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 import config
 from llm_client import LLMClient
@@ -9,8 +10,10 @@ from workspace import WorkspaceManager
 from ingestion.file_handler import parse_file
 from ingestion.vector_store import VectorStore
 from query.executor import QueryExecutor
+from query.executor import is_greeting
 from utils.logger import get_logger
 from internal_auth import InternalAPIKeyMiddleware
+from quiz_generator import QuizGenerator
 
 logger = get_logger(__name__)
 
@@ -35,7 +38,10 @@ db           = DatabaseManager()
 vector_store = VectorStore()
 memory       = ConversationMemory()
 workspaces   = WorkspaceManager()
-executor     = QueryExecutor(llm=llm, db=db, vector_store=vector_store)
+_viz_cache:  dict = {}  # viz data cache
+_pdf_cache:       dict = {}  # pdf token → file path
+_workspace_pdf:   dict = {}  # workspace_id → last generated pdf_path
+executor     = QueryExecutor(llm=llm, db=db, vector_store=vector_store, memory=memory)
 
 logger.info("Hybrid RAG API v3 started")
 
@@ -196,15 +202,25 @@ def query_workspace(workspace_id: str, req: QueryRequest):
     if not ws:
         raise HTTPException(status_code=404, detail=f"Workspace '{workspace_id}' not found.")
 
+    # Allow greetings even when no file is uploaded yet
     if not ws.get("index_id"):
+        if is_greeting(req.question):
+            # No index_id yet — use workspace_id as a memory key for the session
+            session_id = f"greeting_{workspace_id}"
+            result = executor._run_greeting(req.question, session_id)
+            memory.add(session_id, req.question, result["answer"])
+            result["history_length"] = memory.get_exchange_count(session_id)
+            result["workspace_id"] = workspace_id
+            result["workspace_name"] = ws["name"]
+            return result
         raise HTTPException(
             status_code=400,
-            detail="This workspace has no file. Please upload a file first.",
+            detail="This workspace has no file. Please upload a file before asking document questions.",
         )
 
     logger.info(
         f"Query | workspace_id={workspace_id} | "
-        f"file={ws['file_name']} | question={req.question[:80]}"
+        f"file={ws.get('file_name','unknown')} | question={req.question[:80]}"
     )
 
     result = executor.execute(question=req.question, index_id=ws["index_id"])
@@ -237,6 +253,13 @@ def delete_workspace(workspace_id: str):
         "workspace_id": workspace_id,
     }
 
+
+
+@app.get("/history/{index_id}", summary="Get chat history for an index")
+def get_history(index_id: str):
+    """Returns all conversation exchanges stored for this index_id."""
+    history = memory.get_all(index_id)
+    return {"index_id": index_id, "history": history}
 
 @app.delete("/workspace/{workspace_id}/history", summary="Clear chat history for a workspace")
 def clear_workspace_history(workspace_id: str):
@@ -296,3 +319,205 @@ def query(req_body: dict):
     result = executor.execute(question=question, index_id=index_id)
     result["history_length"] = memory.get_exchange_count(index_id)
     return result
+
+
+
+
+# ─────────────────────────────────────────────
+# Streaming Query Endpoint
+# ─────────────────────────────────────────────
+
+@app.post("/workspace/{workspace_id}/stream", summary="Stream answer word by word via SSE")
+async def stream_workspace(workspace_id: str, req: QueryRequest):
+    """
+    Streams the answer token by token using Server-Sent Events.
+    Handles: greetings (no file needed), RAG, SQL queries.
+    """
+    import asyncio
+    import json as _json
+
+    ws = workspaces.get(workspace_id)
+    if not ws:
+        raise HTTPException(status_code=404, detail=f"Workspace '{workspace_id}' not found.")
+
+    async def event_generator():
+        try:
+            # ── Case 1: No file uploaded ──────────────────────────────────
+            if not ws.get("index_id"):
+                if is_greeting(req.question):
+                    session_id = f"greeting_{workspace_id}"
+                    result = executor._run_greeting(req.question, session_id)
+                else:
+                    yield "data: __ERROR__This workspace has no file. Please upload a file first.\n\n"
+                    yield "data: __DONE__\n\n"
+                    return
+
+            # ── Case 2: Has file — run full pipeline ──────────────────────
+            else:
+                result = executor.execute(question=req.question, index_id=ws["index_id"])
+
+            answer       = result.get("answer", "")
+            query_type   = result.get("query_type", "rag")
+            confidence   = result.get("confidence", None)
+            intent       = result.get("intent", "answer")
+            intent_label = result.get("intent_label", "🔍 RAG")
+            viz_data     = result.get("viz_data", None)
+            pdf_path     = result.get("pdf_path", None)
+
+            # Store large data in cache — send only token through SSE
+            import uuid as _uuid
+            viz_token = None
+            if viz_data:
+                viz_token = str(_uuid.uuid4())
+                _viz_cache[viz_token] = viz_data
+
+            pdf_token = None
+            if pdf_path:
+                pdf_token = str(_uuid.uuid4())
+                _pdf_cache[pdf_token] = pdf_path
+                # Also store as latest pdf for this workspace (for report email)
+                _workspace_pdf[workspace_id] = pdf_path
+                # Store by BOTH workspace_id AND index_id so executor can find it
+                # executor uses index_id as its key, main.py uses workspace_id
+                index_id_for_cache = ws.get("index_id", workspace_id)
+                executor.workspace_pdf_cache[workspace_id]        = pdf_path
+                executor.workspace_pdf_cache[index_id_for_cache]  = pdf_path
+
+            # Send metadata — no large payload
+            meta = _json.dumps({
+                "query_type":   query_type,
+                "confidence":   confidence,
+                "intent":       intent,
+                "intent_label": intent_label,
+                "viz_token":    viz_token,
+                "pdf_token":    pdf_token,
+                "workspace_id": workspace_id,
+            })
+            yield f"data: __META__{meta}\n\n"
+
+            # ── Stream answer word by word ────────────────────────────────
+            if not answer:
+                yield "data: (No answer generated)\n\n"
+            else:
+                words = answer.split(" ")
+                for i, word in enumerate(words):
+                    token = word if i == len(words) - 1 else word + " "
+                    # Escape newlines inside the SSE data field
+                    token_escaped = token.replace("\n", "\\n")
+                    yield f"data: {token_escaped}\n\n"
+                    await asyncio.sleep(0.02)
+
+            yield "data: __DONE__\n\n"
+
+        except Exception as e:
+            logger.error(f"Stream error: {e}")
+            yield f"data: __ERROR__Server error: {str(e)}\n\n"
+            yield "data: __DONE__\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+            "Connection": "keep-alive",
+        }
+    )
+
+# ─────────────────────────────────────────────
+# Visualization Data Endpoint
+# ─────────────────────────────────────────────
+
+@app.get("/workspace/{workspace_id}/latest_pdf", summary="Get latest PDF path for workspace")
+def get_latest_pdf(workspace_id: str):
+    path = _workspace_pdf.get(workspace_id)
+    if not path:
+        return {"pdf_path": None}
+    return {"pdf_path": path}
+
+
+@app.get("/pdf/{pdf_token}", summary="Download generated PDF report")
+def download_pdf_report(pdf_token: str):
+    """Serve generated PDF file by token."""
+    import os
+    from fastapi.responses import FileResponse
+    path = _pdf_cache.get(pdf_token)
+    if not path or not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="PDF not found or expired.")
+    return FileResponse(
+        path,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename=Analytics_Report.pdf"}
+    )
+
+@app.get("/viz/{viz_token}", summary="Fetch stored visualization data by token")
+def get_viz_data(viz_token: str):
+    """
+    Frontend fetches full chart JSON using a token received in stream metadata.
+    This avoids sending large JSON through SSE which can get truncated.
+    """
+    data = _viz_cache.get(viz_token)
+    if not data:
+        raise HTTPException(status_code=404, detail="Visualization data not found or expired.")
+    return {"viz_data": data}
+
+# ─────────────────────────────────────────────
+# Quiz Endpoint
+# ─────────────────────────────────────────────
+
+quiz_generator = QuizGenerator(llm=llm, vector_store=vector_store, db=db)
+
+class QuizRequest(BaseModel):
+    difficulty: str = "medium"   # easy | medium | hard
+    num_questions: int = 5       # 1–20
+
+@app.post("/workspace/{workspace_id}/quiz", summary="Generate MCQ quiz from workspace file")
+def generate_quiz(workspace_id: str, req: QuizRequest):
+    """
+    Generate a multiple choice quiz from the file uploaded in this workspace.
+    - difficulty: easy / medium / hard
+    - num_questions: 1 to 20
+    Returns a list of questions with options A-D, correct answer, and explanation.
+    """
+    ws = workspaces.get(workspace_id)
+    if not ws:
+        raise HTTPException(status_code=404, detail=f"Workspace '{workspace_id}' not found.")
+
+    if not ws.get("index_id"):
+        raise HTTPException(
+            status_code=400,
+            detail="This workspace has no file. Please upload a file before generating a quiz.",
+        )
+
+    if req.difficulty.lower() not in ["easy", "medium", "hard"]:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid difficulty. Choose 'easy', 'medium', or 'hard'.",
+        )
+
+    num = max(1, min(20, req.num_questions))
+
+    logger.info(
+        f"Quiz request | workspace_id={workspace_id} | "
+        f"difficulty={req.difficulty} | num_questions={num}"
+    )
+
+    try:
+        questions = quiz_generator.generate(
+            index_id=ws["index_id"],
+            difficulty=req.difficulty.lower(),
+            num_questions=num,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        logger.error(f"Quiz generation error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to generate quiz. Please try again.")
+
+    return {
+        "workspace_id": workspace_id,
+        "workspace_name": ws["name"],
+        "difficulty": req.difficulty.lower(),
+        "num_questions": len(questions),
+        "questions": questions,
+    }

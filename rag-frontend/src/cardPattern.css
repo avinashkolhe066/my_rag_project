@@ -1,0 +1,54 @@
+/* Star pattern for card hover effect */
+.card-pattern-hover {
+  position: relative;
+  overflow: hidden;
+}
+.card-pattern-hover .pattern-container {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.card-pattern-hover:hover .pattern-container,
+.card-pattern-hover:focus-within .pattern-container {
+  opacity: 1;
+}
+.pattern-container {
+  height: 100%;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+}
+.pattern-stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow:
+    501px 81px #fff, 450px 124px #fff, 193px 180px #fff, 469px 67px #fff, 90px 74px #fff,
+    160px 78px #fff, 841px 962px #fff, 630px 667px #fff, 788px 676px #fff, 367px 734px #fff;
+  animation: animStar 30s linear infinite;
+}
+.pattern-stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    925px 320px #fff, 693px 778px #fff, 16px 711px #fff, 171px 563px #fff, 661px 919px #fff;
+  animation: animStar 60s linear infinite;
+}
+.pattern-stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    200px 81px #fff, 731px 521px #fff, 132px 39px #fff, 888px 547px #fff, 899px 226px #fff;
+  animation: animStar 90s linear infinite;
+}
+@keyframes animStar {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-200px); }
+}

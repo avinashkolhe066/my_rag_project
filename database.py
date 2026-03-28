@@ -51,6 +51,25 @@ class DatabaseManager:
             logger.error(f"SQL execution failed: {e} | query={clean_sql[:120]}")
             raise
 
+    def get_table_schema(self, table_name: str) -> list[dict]:
+        """
+        Return column names and types for a given table.
+        Used to pass schema info to the LLM so it generates accurate SQL.
+        Example return: [{"name": "price", "type": "REAL"}, ...]
+        """
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute(f"PRAGMA table_info({table_name})")
+            rows = cursor.fetchall()
+            conn.close()
+            schema = [{"name": row[1], "type": row[2]} for row in rows]
+            logger.debug(f"Schema for '{table_name}': {schema}")
+            return schema
+        except Exception as e:
+            logger.error(f"get_table_schema failed: {e}")
+            return []
+
     def table_exists(self, table_name: str) -> bool:
         """Check whether a table exists in the database."""
         try:
